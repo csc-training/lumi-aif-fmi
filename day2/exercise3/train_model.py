@@ -19,19 +19,13 @@ from torch import nn
 from torch.utils.data import DataLoader
 
 # TorchGeo
-from torchgeo.datasets import RasterDataset, BoundingBox, UnionDataset
+from torchgeo.datasets import RasterDataset, UnionDataset
 from torchgeo.samplers import GridGeoSampler, RandomGeoSampler
-from torchgeo.trainers import SemanticSegmentationTask
-
-# Data augmentation
-from kornia.augmentation import AugmentationSequential
-import kornia.augmentation as K 
 
 # Matplotlib
 import matplotlib.pyplot as plt
 
 # Mixed precision
-from torch.cuda.amp import GradScaler
 from torch import amp
 
 

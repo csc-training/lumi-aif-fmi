@@ -11,7 +11,7 @@
 module load pytorch/2.7
 
 # Activate virtual environment containing special packages
-source /projappl/project_xxxxxxxxx/fmi_course/bin/activate
+source /projappl/project_xxxxxxxxx/fmi/bin/activate
 
 # Run the Python code
 srun python3 train_model.py
