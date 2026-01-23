@@ -9,7 +9,7 @@ from dataset import HousingDataset
 class Model(nn.Module):
     def __init__(self):
         super().__init__()
-        n1 = nn.BatchNorm1d(8)
+        n1 = nn.BatchNorm1d(8, track_running_stats=False)
         l1 = nn.Linear(8, 16)
         a1 = nn.ReLU()
         l2 = nn.Linear(16, 16)

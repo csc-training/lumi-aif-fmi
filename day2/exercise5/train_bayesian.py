@@ -10,7 +10,7 @@ class Model(vi.VIModule):
     def __init__(self):
         super().__init__()
         self.f = nn.Sequential(
-            nn.BatchNorm1d(8),
+            nn.BatchNorm1d(8, track_running_stats=False),
             vi.VILinear(8, 16),
             nn.ReLU(),
             vi.VILinear(16, 16),
@@ -35,7 +35,7 @@ def main():
     model.train()
     print(model)
 
-    predictive_distribution = vi.distributions.Normal()
+    predictive_distribution = vi.distributions.MeanFieldNormal()
     loss_fn = vi.KullbackLeiblerLoss(predictive_distribution, dataset_size=len(ds))
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
