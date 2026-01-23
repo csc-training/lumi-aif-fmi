@@ -34,7 +34,7 @@ During the course exercises are done in LUMI, which is EuroHPC supercomputer. Ac
 ### Copy exercise materials
 Open Login node shell
 ```
-cd /scratch/project_xxxxxxxxx/students
+cd /scratch/project_462001233/students
 mkdir $USER
 cd $USER
 git clone https://github.com/csc-training/lumi-aif-fmi.git
@@ -43,16 +43,16 @@ git clone https://github.com/csc-training/lumi-aif-fmi.git
 #### Jupyter 
 * Click "Jupyter" on dashboard
 * Select following settings:
-	* Project: project_xxxxxxxxx during course, own project later 
+	* Project: project_462001233 during course, own project later 
 	* Partition: interactive
 	* CPU cores: 4
 	* Local disk: 0
 	* Time: 4:00:00 (or adjust to reasonable)
- 	* Working directory: /scratch/project_xxxxxxxxx during course, own project's scratch later* 
+ 	* Working directory: /scratch/project_462001233 during course, own project's scratch later* 
 	* Python: pytorch
 		* For exercise 3-4, you need to activate a virtual environment with some extra packages, see below
       		* Check, `Enable virtual environment`
-			* Virtual environment path: `/projappl/project_xxxxxxxxx/fmi`
+			* Virtual environment path: `/projappl/project_462001233/fmi_course`
    			* Check, `Enable packages under ~/.local/lib on venv start`
    	* (Do not select any of the check-boxes below.)
 * Click launch and wait until granted resources 
