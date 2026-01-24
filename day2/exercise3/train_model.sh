@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --account=project_xxxxxxxxx # Choose the project to be billed. Change to own project, if used outside of the course.
+#SBATCH --account=project_462001233 # Choose the project to be billed. Change to own project, if used outside of the course.
 #SBATCH --partition=gpu             # Which queue to use. Defines maximum time, memory, tasks, nodes and local storage for job.             
 #SBATCH --ntasks=1                  # Number of tasks. Upper limit depends on partition.
 #SBATCH --cpus-per-task=7           # How many processors work on one task. Upper limit depends on number of CPUs per GPU. In LUMI there are 7 CPU cores per one GPU.
@@ -11,7 +11,7 @@
 module load pytorch/2.7
 
 # Activate virtual environment containing special packages
-source /projappl/project_xxxxxxxxx/fmi/bin/activate
+source /projappl/project_462001233/fmi_course/bin/activate
 
 # Run the Python code
 srun python3 train_model.py
