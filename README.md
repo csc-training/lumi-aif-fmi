@@ -43,12 +43,12 @@ git clone https://github.com/csc-training/lumi-aif-fmi.git
 #### Jupyter 
 * Click "Jupyter" on dashboard
 * Select following settings:
-	* Project: project_462001233 during course, own project later 
+	* Project: project_462001233 during the course, own project later 
 	* Partition: interactive
 	* CPU cores: 4
 	* Local disk: 0
 	* Time: 4:00:00 (or adjust to reasonable)
- 	* Working directory: /scratch/project_462001233 during course, own project's scratch later* 
+ 	* Working directory: /scratch/project_462001233 during the course, own project's scratch later
 	* Python: pytorch
 		* For exercise 3-4, you need to activate a virtual environment with some extra packages, see below
       		* Check, `Enable virtual environment`
