@@ -220,8 +220,7 @@ def train(model, train_loader, val_loader, loss_fn, optimizer, acc_fn, epochs, d
 
 def main():
     # Set path to data and label files
-    #base_folder = os.path.join(os.sep, 'scratch', 'project_462001233', os.environ.get('USER'), 'fmi')
-    base_folder = os.path.join(os.sep, 'scratch', 'project_2000599', 'ihakulin', 'fmi')
+    base_folder = os.path.join(os.sep, 'scratch', 'project_462001233')
     data_folder = os.path.join(base_folder,'data', 'raster')
     data_deep = os.path.join(data_folder, 'data_deep.tif')
     data_validation = os.path.join(data_folder, 'data_validation.tif')
@@ -229,7 +228,7 @@ def main():
     labels_deep = os.path.join(data_folder, 'labels_deep.tif')
     labels_validation = os.path.join(data_folder, 'labels_validation.tif')
 
-    output_folder = os.path.join(base_folder, 'model_training')
+    output_folder = os.path.join(base_folder, os.environ.get('USER'), 'fmi', 'model_training')
     os.makedirs(output_folder, exist_ok=True)
 
     # Training settings:
