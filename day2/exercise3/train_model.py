@@ -216,12 +216,12 @@ def train(model, train_loader, val_loader, loss_fn, optimizer, accuracy_fn, epoc
     print(f"\nTraining complete in {elapsed//60:.0f}m {elapsed%60:.0f}s")
     return history  
 
-def plot_loss(history, output_folder):
+def plot_loss(history, output_folder, model_name):
     plt.figure(figsize=(10,8)) 
     plt.plot(history["train_loss"], label='Train loss')
     plt.plot(history["val_loss"], label='Val loss')
     plt.legend()
-    plt.savefig(f"{output_folder}/loss_plot.png")
+    plt.savefig(f"{output_folder}/loss_plot_{model_name}.png")
 
 
 def main():
@@ -275,7 +275,7 @@ def main():
     # Train model
     history = train(model, train_loader, val_loader, loss_function, optimizer, accuracy_metric, num_epochs, device, early_stopper)
     # Plot training and validation loss. These are stored to in the model_training folder
-    plot_loss(history, output_folder)
+    plot_loss(history, output_folder, model.__class__.__name__)
     
     # Save the trained model for inference
     output_file = f"{output_folder}/{model.__class__.__name__}_model.pt"
