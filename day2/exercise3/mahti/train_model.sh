@@ -8,7 +8,7 @@
 #SBATCH --gres=gpu:a100:1           # Number of GPUs 
 
 # Load Pytorch module
-module load pytorch/2.7
+module load pytorch/2.9
 
 # Activate virtual environment containing special packages
 source /projappl/project_2017263/fmi_course/bin/activate
