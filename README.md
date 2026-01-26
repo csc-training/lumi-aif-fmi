@@ -4,31 +4,46 @@
 
 ## Day 1
 
+### Exercise 1
 MNIST classification with MLPs.
 
 * *01-pytorch-mnist-mlp.ipynb*
 
+### Exercise 2
 Image classification with CNNs.
 
 * *02-pytorch-mnist-cnn.ipynb*
 
 ## Day 2 
 
+### Exercise 3
 Land segmentation with UNET.
 
 * *03-train_model.py*
 * *03-train_model.sh*
 * *03-inference_and_evaluation.ipynb*
 
-## Setup
+### Exercise 4
+Point cloud/object classification with GNNs.
+
+* *run_mahti.sh*
+* *train_shape_geom.py*
+
+### Exercise 5
+Fashion MNIST with BNNs.
+
+* *run_mahti.sh*
+* *train_fashion_bayesian.py*
+
+# Setup
 
 ## Course exercise enviroment
-During the course exercises are done in LUMI, which is EuroHPC supercomputer. Accessing LUMI requires LUMI project. Finnish users get access to LUMI via CSC. For course the course participants are added to the course project.
+During the course exercises are run on Mahti, which is a Finnish national supercomputer. Accessing Mahti requires a project with a budget. Finnish users get access to Mahti via CSC. For this course the course participants are added to the course project.
 
 ### LUMI web user interface
-* Open https://www.lumi.csc.fi
+* Open https://www.mahti.csc.fi
 * Log in with:
-	* HAKA, if you have (Finnish universities and some research institutes)
+	* HAKA, if you have (Finnish universities and some research institutes, e.g. FMI)
  	* [CSC account](https://docs.csc.fi/accounts/), you need your CSC username and password 
 
 ### Copy exercise materials
@@ -40,7 +55,7 @@ cd $USER
 git clone https://github.com/csc-training/lumi-aif-fmi.git
 ```
 	
-#### Jupyter 
+### Jupyter 
 * Click "Jupyter" on dashboard
 * Select following settings:
   	* Reservation: fmi-day1 or fmi-day2
