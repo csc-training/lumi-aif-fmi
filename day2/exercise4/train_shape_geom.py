@@ -65,7 +65,7 @@ def test(dl, model, loss_fn, device=torch.device("cuda:0")):
             data = data.to(device)
             pred = model(data)
             loss += loss_fn(pred, data.y).item()
-            correct += (pred.argmax(1) == y).type(torch.float).sum().item()
+            correct += (pred.argmax(1) == data.y).type(torch.float).sum().item()
     loss /= len(dl)
     correct /= (len(dl.dataset))
     print(f"Test accuracy: {(100 * correct):>0.1f}%, Avg loss: {loss:>8f}")
