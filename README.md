@@ -43,6 +43,7 @@ git clone https://github.com/csc-training/lumi-aif-fmi.git
 #### Jupyter 
 * Click "Jupyter" on dashboard
 * Select following settings:
+  	* Reservation: fmi-day1 or fmi-day2
 	* Project: project_2017263 during the course, own project later 
 	* Partition: interactive
 	* CPU cores: 4
