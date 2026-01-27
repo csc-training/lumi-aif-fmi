@@ -49,7 +49,7 @@ During the course exercises are run on Mahti, which is a Finnish national superc
 ### Copy exercise materials
 Open Login node shell
 ```
-cd /scratch/project_project_2017263
+cd /scratch/project_2017263
 mkdir $USER
 cd $USER
 git clone https://github.com/csc-training/lumi-aif-fmi.git
