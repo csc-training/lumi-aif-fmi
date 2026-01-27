@@ -67,10 +67,9 @@ git clone https://github.com/csc-training/lumi-aif-fmi.git
  	* Working directory: /scratch/project_2017263 during the course, own project's scratch later
 	* Python: pytorch
 		* For exercise 3-4, you need to activate a virtual environment with some extra packages, see below
-      		* Check, `Enable virtual environment`
+      		* Check `Enable advanced settings`
 			* Virtual environment path: `/projappl/project_2017263/fmi_course`
-   			* Check, `Enable packages under ~/.local/lib on venv start`
-   	* (Do not select any of the check-boxes below.)
+   	* (No need to change any other settings.)
 * Click launch and wait until granted resources 
 * Click "Connect to Jupyter"
 * Open the cloned exercise folder under your `<your_username>` in JupyterLab
