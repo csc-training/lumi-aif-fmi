@@ -1,4 +1,5 @@
 #!/bin/bash
+#SBATCH --reservation=fmi-day2
 #SBATCH --account=project_2017263   # Choose the project to be billed. Change to own project, if used outside of the course.
 #SBATCH --partition=gpusmall        # Which queue to use. Defines maximum time, memory, tasks, nodes and local storage for job.             
 #SBATCH --ntasks=1                  # Number of tasks. Upper limit depends on partition.

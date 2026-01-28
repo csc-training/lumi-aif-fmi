@@ -240,7 +240,7 @@ def main():
     # Training settings:
     in_channels = 8 # Number of bands in data image 
     num_classes = 4 # Number of classes in the label data
-    learning_rate = 1e-3 
+    learning_rate = 3e-4  
     patience = 5 # How many epochs model training is continued, if validation loss does not improve any more.
     batch_size = 8 
     tile_size = 512 
