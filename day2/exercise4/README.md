@@ -46,3 +46,7 @@ Its forward pass takes vertex features and batch information:
 ```python
 m = pytorch_geometric.nn.global_max_pool(data.pos, data.batch)
 ```
+
+Note that pooling operations might currently not be GPU accelerated.
+You can transfer the tensors back to CPU to perform the operation.
+Do not forget to return the result to the GPU, if you perform further operations there.
